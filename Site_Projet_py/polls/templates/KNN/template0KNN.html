@@ -1,0 +1,30 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>   
+  <body>
+    <p>This is my page</p>
+    {{les_labels_iris}}
+  
+  
+    <ul>
+    {% for a  in les_labels_iris %}
+        <li>{{ a}}</li>
+    {% endfor %}
+    </ul>  
+    
+
+    <form action= "apply_Model">
+    <label for="model-select">Choose a model:</label>
+        <select name="model" id="model-select" onchange='if(this.values !=0){this.form.submit();}'>     
+            <option value="0">--Please choose a model--</option>
+            <option value="KNN">Knn</option>
+            <option value="KMeans">KMeans</option>
+        </select>
+    </form>
+ 
+    
+  </body>
+</html>

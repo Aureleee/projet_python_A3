@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Affichage de code</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>LE PROJET ULTIME</h1>
+    <p> Description du projet....</p>
+    <ul>
+        <li><a href="{% url 'polls:lobby' %}">Revenir au lobby</a>
+
+
+        <li><a href="{% url 'polls:code'%}">CODE</a>
+        
+    </ul>
+
+    <iframe src="https://drive.google.com/file/d/1-jG54-mgFuZ1O_f_j3t2RwaMrXxBah-Z/preview" 
+    width="600" height="800" 
+    style="float: right; margin-left: 20px;">
+</iframe>
+
+
+<style>
+    pre {
+        background-color: #080000;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    code {
+        font-family: "Courier New", monospace;
+        color: #c7254e;
+        background-color: #000408;
+    }
+</style>
+
+<pre><code>
+def hello():
+    print("Hello, world!")
+</code></pre>
+
+
+</body>
+</html>

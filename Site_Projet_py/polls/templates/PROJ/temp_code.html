@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Affichage de code</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>LE PROJET ULTIME</h1>
+    
+    <ul>
+        <form action="/polls" method="get">
+            <button type="submit">Retour au lobby</button>
+
+            <li><a href="{% url 'polls:index' %}">PAGE TEST</a></li>
+
+
+
+        
+    </ul>
+
+    
+
+
+<style>
+    pre {
+        background-color: #080000;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    code {
+        font-family: "Courier New", monospace;
+        color: #c7254e;
+        background-color: #000408;
+    }
+</style>
+<h2>Étapes pour installer Django</h2>
+<ol>
+    <li>Installer Python</li>
+    <li>Installer Django avec la commande <code>pip install django</code></li>
+    <li>Créer un projet Django avec <code>django-admin startproject myproject</code></li>
+    <li>Lancer le serveur avec <code>python manage.py runserver</code></li>
+    <li>Accéder à l'application sur <code>http://127.0.0.1:8000/</code></li>
+</ol>
+
+</body>
+</html>
